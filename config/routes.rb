@@ -1,5 +1,6 @@
 Urdb::Application.routes.draw do
-  resources :movies
-
+  resources :movies do
+    resources :showitmes
+  end
   root 'movies#index'
 end
