@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 # Use HAML
 gem 'haml-rails'
 gem 'haml'
+gem 'hirb'
+gem 'devise'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
