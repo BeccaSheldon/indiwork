@@ -4,10 +4,10 @@
   <%= devise_error_messages! %>
   
   <div><%= f.label :name %><br />
-  <%= f.name_field :name, :autofocus => true %></div>
+  <%= f.text_field :name, :autofocus => true %></div>
 
   <div><%= f.label :profile_pic %><br />
-  <%= f.profile_pic_field :profile_pic, :autofocus => true %></div>
+  <%= f.text_field :profile_pic, :autofocus => true %></div>
   
   <div><%= f.label :email %><br />
   <%= f.email_field :email, :autofocus => true %></div>
