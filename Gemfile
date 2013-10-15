@@ -5,6 +5,8 @@ gem 'haml-rails'
 gem 'haml'
 gem 'pry'
 gem 'carrierwave'
+gem 'rmagick'
+gem 'figaro'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
