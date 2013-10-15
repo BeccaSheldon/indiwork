@@ -10,7 +10,6 @@
             =link_to "#{phase.capitalize} <--", project_url(@project.id, phase: phase)
           - else
             = link_to phase.capitalize, project_url(@project.id, phase: phase)
-
 %br
 
 = render "projects/posts/#{@page}"
