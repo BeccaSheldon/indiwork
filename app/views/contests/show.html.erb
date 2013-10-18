@@ -60,18 +60,26 @@
   /* *
    * Lesson Step: The Comment Wall View
    */
-  var wall = new CommentWall();
+   // REPLACE THIS:
+  // var wall = new CommentWall();
+  // WITH THIS:
+  var wall = new CommentWall([], {
+    url: '<%= contest_comment_api_path @contest %>'
+      
+  });
 
   var wallView = new CommentWallView({
     collection: wall,
     el: '.comment-wall'
   });
 
-  wall.add([
-    { username: 'ROBOT A', side: 'left', comment: 'EXCELLENT' },
-    { username: 'ROBOT B', side: 'right', comment: 'YES' }
-  ]);
-
+  // REPLACE THIS:
+  // wall.add([
+  //   { username: 'ROBOT A', side: 'left', comment: 'EXCELLENT' },
+  //   { username: 'ROBOT B', side: 'right', comment: 'YES' }
+  // ]);
+  // WITH THIS:
+  wall.add(<%= raw @contest.comments.to_json %>);
 
   /* *
    * Lesson Step: The New Comment Form
